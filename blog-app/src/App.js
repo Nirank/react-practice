@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+import { Outlet } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <div className="bg-yellow-300">
-     <h1 className ='text-red-500 '>Nirank</h1>
+      <h1>Nirank</h1>
+     <main>
+      <Outlet/>
+     </main>
     </div>
   );
 }
