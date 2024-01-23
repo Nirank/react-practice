@@ -13,7 +13,7 @@ import SignUp from "./pages/SignUp";
 import AllPost from "./pages/AllPost";
 import EditPost from "./pages/EditPost";
 import Post from "./pages/Post";
-import AuthLayout from "./components/AuthLayout";
+import AuthLayout from "./components/AuthLayout.jsx";
 
 
 const router = createBrowserRouter([
@@ -74,14 +74,16 @@ const router = createBrowserRouter([
         ),
       },
       {        
-        path: "*",
+        path: "/*",
         elelment: <h1>404</h1>,
       }
     ],
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
+debugger
 root.render(
+  
   <React.StrictMode>
     <Provider store={store}>
       <RouterProvider router={router} />
